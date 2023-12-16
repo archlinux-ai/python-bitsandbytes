@@ -1,0 +1,31 @@
+pkgbase = python-bitsandbytes
+	pkgdesc = 8-bit CUDA functions for PyTorch
+	pkgver = 0.41.0
+	pkgrel = 1
+	url = https://github.com/TimDettmers/bitsandbytes
+	arch = x86_64
+	license = Apache
+	makedepends = cuda
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-setuptools
+	makedepends = python-wheel
+	depends = python-numpy
+	depends = python-pytorch
+	depends = python-scipy
+	source = bitsandbytes-0.41.0.tar.gz::https://github.com/TimDettmers/bitsandbytes/archive/refs/tags/0.41.0.tar.gz
+	sha256sums = 79f24d75d607c30040ed78b13fc621a488f57462e86aed5667e049f8b346642c
+
+pkgname = python-bitsandbytes
+	pkgdesc = 8-bit CUDA functions for PyTorch
+	provides = python-bitsandbytes=0.41.0
+	conflicts = python-bitsandbytes
+
+pkgname = python-bitsandbytes-cuda
+	pkgdesc = 8-bit CUDA functions for PyTorch (with CUDA)
+	depends = python-numpy
+	depends = python-pytorch
+	depends = python-scipy
+	depends = cuda
+	provides = python-bitsandbytes-cuda=0.41.0
+	conflicts = python-bitsandbytes-cuda
